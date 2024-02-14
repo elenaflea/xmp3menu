@@ -29,15 +29,19 @@
                 onclick="convertHTMLtoPDF()"
                 class="btnCTA center btn btn-warning m-3">Create PDF menu
         </button>
-                
 
-        <div id="divID">
-            <div class="pageA4">
-                <div class="input-group center p-3 fix w-25">
+        <div class="btn-group mb-3" role="group" >
+        <button onclick="hideSevenDays()" type="button" class="btn btn-outline-warning">1 DAY </button>
+        <button onclick="showSevenDays()" type="button" class="btn btn-outline-warning">7 DAYS </button>  
+        </div>
+    <div id="divID">
+
+    <div class="pageA4">
+            <div class="input-group center p-3 fix w-25">
                     <input type="text" class="dayInput form-control w-2" placeholder="1" >
                     <span class="input-group-text" id="basic-addon2" style="font-family: OpenSans;" >ДЕНЬ</span>
                     
-                </div>
+            </div>
                 
         
         <div class="breakfast mt-0">
@@ -85,13 +89,362 @@
                 <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
                 <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
             </div>
+                         
+    </div>
 
+    <!-- page 2-7 -->
+    <div class="hidden">
 
-
-
-               
-                          
+        <hr> 
+        <div class="pageA4">
+            
+            <div class="input-group center p-3 fix w-25">
+                    <input type="text" class="dayInput form-control w-2" placeholder="2" >
+                    <span class="input-group-text" id="basic-addon2" style="font-family: OpenSans;" >ДЕНЬ</span>
+                    
             </div>
+                
+        
+        <div class="breakfast mt-0">
+            <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац утром (8-11 утра):</p>
+        </div>
+
+        <div class="d-flex flex-row justify-content-center">
+            <!--<textarea  name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></textarea>-->
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-start align-items-center mt-0">
+        <div class="lunch ">
+            <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац днем (13-14 дня):</p>
+        </div>
+        <div class="lineOne"></div>
+        </div>
+        <div class="d-flex flex-row mb-3 justify-content-center">
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        </div>
+
+
+        <div class="grayBack">
+        <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="goute ">
+                <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац на полдник (16-17 дня):</p>
+            </div>
+            <div class="lineTwo"></div>
+            </div>
+            <div class="d-flex flex-row  justify-content-center">
+                <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+                <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-start align-items-center mt-0">
+            <div class="diner ">
+                <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац вечером (до 20 вечера):</p>
+            </div>
+            <div class="lineThree"></div>
+            </div>
+            <div class="d-flex flex-row  justify-content-center">
+                <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+                <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+            </div>
+                          
+    </div>
+
+    <hr> 
+
+    <div class="pageA4">
+        
+        <div class="input-group center p-3 fix w-25">
+                <input type="text" class="dayInput form-control w-2" placeholder="3" >
+                <span class="input-group-text" id="basic-addon2" style="font-family: OpenSans;" >ДЕНЬ</span>
+                
+        </div>
+            
+    
+    <div class="breakfast mt-0">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац утром (8-11 утра):</p>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center">
+        <!--<textarea  name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></textarea>-->
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-start align-items-center mt-0">
+    <div class="lunch ">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац днем (13-14 дня):</p>
+    </div>
+    <div class="lineOne"></div>
+    </div>
+    <div class="d-flex flex-row mb-3 justify-content-center">
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+
+
+    <div class="grayBack">
+    <div class="d-flex flex-row justify-content-start align-items-center">
+        <div class="goute ">
+            <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац на полдник (16-17 дня):</p>
+        </div>
+        <div class="lineTwo"></div>
+        </div>
+        <div class="d-flex flex-row  justify-content-center">
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-start align-items-center mt-0">
+        <div class="diner ">
+            <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац вечером (до 20 вечера):</p>
+        </div>
+        <div class="lineThree"></div>
+        </div>
+        <div class="d-flex flex-row  justify-content-center">
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        </div>
+                      
+</div>
+<hr> 
+<div class="pageA4">
+    
+    <div class="input-group center p-3 fix w-25">
+            <input type="text" class="dayInput form-control w-2" placeholder="4" >
+            <span class="input-group-text" id="basic-addon2" style="font-family: OpenSans;" >ДЕНЬ</span>
+            
+    </div>
+        
+
+<div class="breakfast mt-0">
+    <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац утром (8-11 утра):</p>
+</div>
+
+<div class="d-flex flex-row justify-content-center">
+    <!--<textarea  name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></textarea>-->
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+</div>
+
+<div class="d-flex flex-row justify-content-start align-items-center mt-0">
+<div class="lunch ">
+    <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац днем (13-14 дня):</p>
+</div>
+<div class="lineOne"></div>
+</div>
+<div class="d-flex flex-row mb-3 justify-content-center">
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+</div>
+
+
+<div class="grayBack">
+<div class="d-flex flex-row justify-content-start align-items-center">
+    <div class="goute ">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац на полдник (16-17 дня):</p>
+    </div>
+    <div class="lineTwo"></div>
+    </div>
+    <div class="d-flex flex-row  justify-content-center">
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+</div>
+
+<div class="d-flex flex-row justify-content-start align-items-center mt-0">
+    <div class="diner ">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац вечером (до 20 вечера):</p>
+    </div>
+    <div class="lineThree"></div>
+    </div>
+    <div class="d-flex flex-row  justify-content-center">
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+                  
+</div>
+<hr> 
+<div class="pageA4">
+    
+    <div class="input-group center p-3 fix w-25">
+            <input type="text" class="dayInput form-control w-2" placeholder="5" >
+            <span class="input-group-text" id="basic-addon2" style="font-family: OpenSans;" >ДЕНЬ</span>
+            
+    </div>
+        
+
+<div class="breakfast mt-0">
+    <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац утром (8-11 утра):</p>
+</div>
+
+<div class="d-flex flex-row justify-content-center">
+    <!--<textarea  name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></textarea>-->
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+</div>
+
+<div class="d-flex flex-row justify-content-start align-items-center mt-0">
+<div class="lunch ">
+    <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац днем (13-14 дня):</p>
+</div>
+<div class="lineOne"></div>
+</div>
+<div class="d-flex flex-row mb-3 justify-content-center">
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+</div>
+
+
+<div class="grayBack">
+<div class="d-flex flex-row justify-content-start align-items-center">
+    <div class="goute ">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац на полдник (16-17 дня):</p>
+    </div>
+    <div class="lineTwo"></div>
+    </div>
+    <div class="d-flex flex-row  justify-content-center">
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+</div>
+
+<div class="d-flex flex-row justify-content-start align-items-center mt-0">
+    <div class="diner ">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац вечером (до 20 вечера):</p>
+    </div>
+    <div class="lineThree"></div>
+    </div>
+    <div class="d-flex flex-row  justify-content-center">
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+                  
+</div>
+<hr> 
+<div class="pageA4">
+    
+    <div class="input-group center p-3 fix w-25">
+            <input type="text" class="dayInput form-control w-2" placeholder="6" >
+            <span class="input-group-text" id="basic-addon2" style="font-family: OpenSans;" >ДЕНЬ</span>
+            
+    </div>
+        
+
+<div class="breakfast mt-0">
+    <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац утром (8-11 утра):</p>
+</div>
+
+<div class="d-flex flex-row justify-content-center">
+    <!--<textarea  name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></textarea>-->
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+</div>
+
+<div class="d-flex flex-row justify-content-start align-items-center mt-0">
+<div class="lunch ">
+    <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац днем (13-14 дня):</p>
+</div>
+<div class="lineOne"></div>
+</div>
+<div class="d-flex flex-row mb-3 justify-content-center">
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+</div>
+
+
+<div class="grayBack">
+<div class="d-flex flex-row justify-content-start align-items-center">
+    <div class="goute ">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац на полдник (16-17 дня):</p>
+    </div>
+    <div class="lineTwo"></div>
+    </div>
+    <div class="d-flex flex-row  justify-content-center">
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+</div>
+
+<div class="d-flex flex-row justify-content-start align-items-center mt-0">
+    <div class="diner ">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац вечером (до 20 вечера):</p>
+    </div>
+    <div class="lineThree"></div>
+    </div>
+    <div class="d-flex flex-row  justify-content-center">
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+                  
+</div>
+
+<hr> 
+
+<div class="pageA4">
+    <div class="input-group center p-3 fix w-25">
+            <input type="text" class="dayInput form-control w-2" placeholder="7" >
+            <span class="input-group-text" id="basic-addon2" style="font-family: OpenSans;" >ДЕНЬ</span>
+            
+    </div>
+        
+
+<div class="breakfast mt-0">
+    <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац утром (8-11 утра):</p>
+</div>
+
+<div class="d-flex flex-row justify-content-center">
+    <!--<textarea  name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></textarea>-->
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+</div>
+
+<div class="d-flex flex-row justify-content-start align-items-center mt-0">
+<div class="lunch ">
+    <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац днем (13-14 дня):</p>
+</div>
+<div class="lineOne"></div>
+</div>
+<div class="d-flex flex-row mb-3 justify-content-center">
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+</div>
+
+
+<div class="grayBack">
+<div class="d-flex flex-row justify-content-start align-items-center">
+    <div class="goute ">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац на полдник (16-17 дня):</p>
+    </div>
+    <div class="lineTwo"></div>
+    </div>
+    <div class="d-flex flex-row  justify-content-center">
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+</div>
+
+<div class="d-flex flex-row justify-content-start align-items-center mt-0">
+    <div class="diner ">
+        <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац вечером (до 20 вечера):</p>
+    </div>
+    <div class="lineThree"></div>
+    </div>
+    <div class="d-flex flex-row  justify-content-center">
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+    </div>
+                  
+</div>
+
+
+    </div>
+
+<!-- END hidden-->
         </div>
     </div> 
  
@@ -117,7 +470,16 @@
                 x: 10,
                 y: 10
             });                
-        }            
+        } 
+        
+        function showSevenDays() {
+            document.querySelector(".hidden").style.display = 'block'
+            console.log("show")
+        }
+        function hideSevenDays() {
+            document.querySelector(".hidden").style.display = 'none'
+            console.log("hide")
+        }
     </script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
     

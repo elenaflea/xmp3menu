@@ -23,7 +23,7 @@ body {
     justify-content: center;
 }
 .pageA4{
-    height: 297mm;
+    height: 305mm;
     width: 210mm;
     background: #fff;
     display: flex;
@@ -105,5 +105,8 @@ textarea, .area{
 }
 .grayBack{
     background-color: #F5F7F8;
+}
+.hidden{
+    display: none;
 }
 
