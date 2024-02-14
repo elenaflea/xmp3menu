@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PDF Menu generator">
+    <meta name="author" content="Elena Grondin">
+    <title>XMP3-PDF generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Maven+Pro:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&family=Style+Script&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <h1>ПРОЕКТ ХМРЗ</h1>
+    <div class="container">
+                     
+        <button  type="button" 
+                value="Convert HTML to PDF"               
+                onclick="convertHTMLtoPDF()"
+                class="btnCTA center btn btn-warning m-3">Create PDF menu
+        </button>
+                
+
+        <div id="divID">
+            <div class="pageA4">
+                <div class="input-group center p-3 fix w-25">
+                    <input type="text" class="dayInput form-control w-2" placeholder="1" >
+                    <span class="input-group-text" id="basic-addon2" style="font-family: OpenSans;" >ДЕНЬ</span>
+                    
+                </div>
+                
+        
+        <div class="breakfast mt-0">
+            <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац утром (8-11 утра):</p>
+        </div>
+
+        <div class="d-flex flex-row justify-content-center">
+            <!--<textarea  name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></textarea>-->
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-start align-items-center mt-0">
+        <div class="lunch ">
+            <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац днем (13-14 дня):</p>
+        </div>
+        <div class="lineOne"></div>
+        </div>
+        <div class="d-flex flex-row mb-3 justify-content-center">
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+            <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+        </div>
+
+
+        <div class="grayBack">
+        <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="goute ">
+                <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац на полдник (16-17 дня):</p>
+            </div>
+            <div class="lineTwo"></div>
+            </div>
+            <div class="d-flex flex-row  justify-content-center">
+                <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+                <div contenteditable="true" name="cooking" id="" cols="40" rows="6" class="m-2 area"style="font-family: OpenSans;"></div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-start align-items-center mt-0">
+            <div class="diner ">
+                <p style= "font-family: OpenSans; letter-spacing: 0.08px;" >Кушац вечером (до 20 вечера):</p>
+            </div>
+            <div class="lineThree"></div>
+            </div>
+            <div class="d-flex flex-row  justify-content-center">
+                <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+                <div contenteditable="true" name="cooking" id="" cols="40" rows="8" class="m-2 area"style="font-family: OpenSans;"></div>
+            </div>
+
+
+
+
+               
+                          
+            </div>
+        </div>
+    </div> 
+ 
+    <script type="text/javascript">
+        function convertHTMLtoPDF() {
+            const { jsPDF } = window.jspdf;
+ 
+            let doc = new jsPDF('p', 'mm', 'a4');
+            let pdfjs = document.querySelector('#divID');
+            doc.addFont("PTSans.ttf", "PTSans", "normal");
+            doc.addFont("OpenSans.ttf", "OpenSans", "normal");
+            doc.setFont("OpenSans"); // set font
+            doc.setFontSize(10);
+            doc.internal.write(0, "Tw")
+
+            doc.html(pdfjs, {
+                html2canvas: {
+                    scale: 0.25
+                },
+                callback: function(doc) {
+                    doc.save("menuXMP3.pdf");
+                },
+                x: 10,
+                y: 10
+            });                
+        }            
+    </script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+    
+</body>
+</html>
